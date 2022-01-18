@@ -1,15 +1,17 @@
-import react from "react";
-import { useState, useEffect } from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
-import { Movies, MovieList, AddReviewForm } from "./movies";
-import { v4 } from "uuid";
-
+import { MovieList } from "./movies";
+import { AddReviewForm } from "./addReviewForm";
 
 function NavigationBar(){
     return(
-        <nav>
-            <Link to="/">Home</Link>
-            <Link to="/addReview">Add Review</Link>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div className="navbar-nav">
+                    <Link className="nav-item nav-link active" to="/">Home</Link>
+                    <Link className="nav-item nav-link active" to="/addReview">Add Review</Link>
+                </div>
+            </div>
         </nav>
     )
 }
@@ -44,7 +46,6 @@ export function AddReview({movies, setMovies}){
                     const newReviews = [
                     ...movies,
                         {
-                            // id: v4(),
                             name,
                             date,
                             actors,
