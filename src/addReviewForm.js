@@ -27,11 +27,11 @@ export function AddReviewForm({ onNewReview = f => f }){
 
     return(
         <>
-            <form className="pt-3" onSubmit={submit}>
-                <div className="mb-3">
-                    <label className="form-label" htmlFor="name">Movie Name:</label>
+            <form className="pt-3 container" onSubmit={submit} style={{textAlign:"left", maxWidth:"720px"}}>
+                <div className="mb-4">
+                    <label className="form-label fw-bold" htmlFor="name">Movie Name:</label>
                     <input 
-                        // className="form-control"
+                        className="form-control"
                         value={name} 
                         onChange = {evt => setName(evt.target.value)}
                         type="text" 
@@ -41,21 +41,48 @@ export function AddReviewForm({ onNewReview = f => f }){
                     />
                 </div>
 
-                <div className="mb-3">
-                    <label htmlFor="date">Release Date:</label>
-                    <input 
-                        value={date}
-                        onChange = {evt => setDate(evt.target.value)}
-                        type="date" 
-                        id="date" 
-                        name="date" 
-                        required
-                    />
+                <div className="mb-4 row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label className="fw-bold" htmlFor="date">Release Date:</label>
+                    </div>
+                    <div class="col-auto">
+                        <input 
+                            value={date}
+                            onChange = {evt => setDate(evt.target.value)}
+                            type="date" 
+                            id="date" 
+                            name="date" 
+                            required
+                        />
+                    </div>
+                    <div class="col-auto px-5">
+
+                    </div>
+                    <div class="col-auto">
+                        <label htmlFor="rating"><b>Rating</b> (out of 5):</label>
+                    </div>
+                    <div class="col-auto">
+                        <select 
+                            value={rating}
+                            onChange = {evt => setRating(evt.target.value)} 
+                            id="rating" 
+                            name="rating" 
+                            required
+                        >
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
                 </div>
 
-                <div className="mb-3">
-                    <label htmlFor="actors">Actors (separate by commas):</label>
+                <div className="mb-4">
+                    <label className="form-label" htmlFor="actors"><b>Actors</b> (Separate by space & comma -> Ex: Daniel Craig, Javier Bardem):</label>
                     <input 
+                        className="form-control"
                         value={actors} 
                         onChange = {evt => setActors(evt.target.value)}
                         type="text" 
@@ -65,9 +92,10 @@ export function AddReviewForm({ onNewReview = f => f }){
                     />
                 </div>
 
-                <div className="mb-3">
-                    <label htmlFor="image">Poster:</label>
+                <div className="mb-4">
+                    <label className="form-label fw-bold" htmlFor="image">Poster:</label>
                     <input 
+                        className="form-control"
                         onChange = {evt => onFileChange(evt)} 
                         type="file" 
                         id="poster" 
@@ -77,25 +105,9 @@ export function AddReviewForm({ onNewReview = f => f }){
                     />
                 </div>
 
-                <div className="mb-3">
-                    <label htmlFor="rating">Rating (out of 5):</label>
-                    <select 
-                        value={rating}
-                        onChange = {evt => setRating(evt.target.value)} 
-                        id="rating" 
-                        name="rating" 
-                        required
-                    >
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
+                <div style={{textAlign:"center"}}>
+                    <button className="btn btn-primary" type="submit" value="Submit">Add Review</button>
                 </div>
-
-                <button className="btn btn-primary" type="submit" value="Submit">Add Review</button>
             </form>
         </>
     );
