@@ -40,7 +40,7 @@ export function Home({movies, setMovies}){
                 </Helmet>
             </div>
             <NavigationBar />
-            <h1>Movie Reviews</h1>
+            {/* <h1>Movie Reviews</h1> */}
 
             <MovieList 
                 movies={movies} 
