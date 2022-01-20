@@ -4,6 +4,8 @@ import { MovieList } from "./movies";
 import { AddReviewForm } from "./addReviewForm";
 import bootstrap from "bootstrap";
 import './App.css';
+import { Helmet } from 'react-helmet';
+
 
 function NavigationBar(){
     return(
@@ -32,6 +34,11 @@ export function Home({movies, setMovies}){
 
     return(
         <>
+            <div>
+                <Helmet>
+                    <title>Movie Reviews</title>
+                </Helmet>
+            </div>
             <NavigationBar />
             <h1>Movie Reviews</h1>
 
