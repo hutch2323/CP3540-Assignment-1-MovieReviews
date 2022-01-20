@@ -2,7 +2,7 @@
     {
         "name" : "Terminator 2",
         "date" : "July 1991",
-        "actors" : ["Arnold Sczwartzneger", "Linda Hamilton", "Edward Furlong"],
+        "actors" : ["Arnold Schwarzenegger", "Linda Hamilton", "Edward Furlong"],
         "poster" : "images/t2.jpg",
         "rating" : 5
     },
@@ -16,8 +16,8 @@
     {
         "name" : "Rocky V",
         "date" : "November 1989",
-        "actors" : ["Sylvester Stallone", "Carl Weathers", "Dolf Lundgren"],
-        "poster" : "images/rocky4.jpg",
+        "actors" : ["Sylvester Stallone", "Tommy Morrison", "Talia Shire"],
+        "poster" : "images/rockyv.jpg",
         "rating" : 5
     }
 ]
