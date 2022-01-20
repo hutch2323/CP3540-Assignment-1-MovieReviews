@@ -33,6 +33,10 @@
   
 }
 
+.card {
+  border: 1px solid rgba(0, 0, 0)
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -49,5 +53,17 @@
 
   #navContainer {
     justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  img.p-3{
+    width:50%
+  }
+}
+
+@media (max-width: 550px) {
+  #logo {
+    width:100%
   }
 }
