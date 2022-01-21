@@ -37,7 +37,7 @@
     {
         "name" : "Spider-Man 3",
         "date" : "5/4/2007",
-        "actors" : ["Tobey Maguire", "Kirsten Bunst", "Topher Grace"],
+        "actors" : ["Tobey Maguire", "Kirsten Dunst", "Topher Grace"],
         "poster" : "images/spiderman3.png",
         "rating" : 3
     }
