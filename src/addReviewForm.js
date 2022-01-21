@@ -42,10 +42,10 @@ export function AddReviewForm({ onNewReview = f => f }){
                 </div>
 
                 <div className="mb-4 row g-3 align-items-center">
-                    <div class="col-auto">
+                    <div className="col-auto">
                         <label className="fw-bold" htmlFor="date">Release Date:</label>
                     </div>
-                    <div class="col-auto">
+                    <div className="col-auto">
                         <input 
                             value={date}
                             onChange = {evt => setDate(evt.target.value)}
@@ -55,13 +55,13 @@ export function AddReviewForm({ onNewReview = f => f }){
                             required
                         />
                     </div>
-                    <div id="spacer" class="col-auto px-5">
+                    <div id="spacer" className="col-auto px-5">
 
                     </div>
-                    <div id="ratingLabel" class="col-auto">
+                    <div id="ratingLabel" className="col-auto">
                         <label htmlFor="rating"><b>Rating</b> (out of 5):</label>
                     </div>
-                    <div id="ratingCol" class="col-auto">
+                    <div id="ratingCol" className="col-auto">
                         <select 
                             value={rating}
                             onChange = {evt => setRating(evt.target.value)} 
@@ -80,7 +80,7 @@ export function AddReviewForm({ onNewReview = f => f }){
                 </div>
 
                 <div className="mb-4">
-                    <label className="form-label" htmlFor="actors"><b>Actors</b> (Separate by space & comma -> Ex: Daniel Craig, Javier Bardem):</label>
+                    <label className="form-label" htmlFor="actors"><b>Actors</b> (Separate by comma & space -> Ex: Daniel Craig, Javier Bardem):</label>
                     <input 
                         className="form-control"
                         value={actors} 
