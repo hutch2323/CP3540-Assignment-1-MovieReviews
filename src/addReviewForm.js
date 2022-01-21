@@ -55,13 +55,13 @@ export function AddReviewForm({ onNewReview = f => f }){
                             required
                         />
                     </div>
-                    <div class="col-auto px-5">
+                    <div id="spacer" class="col-auto px-5">
 
                     </div>
-                    <div class="col-auto">
+                    <div id="ratingLabel" class="col-auto">
                         <label htmlFor="rating"><b>Rating</b> (out of 5):</label>
                     </div>
-                    <div class="col-auto">
+                    <div id="ratingCol" class="col-auto">
                         <select 
                             value={rating}
                             onChange = {evt => setRating(evt.target.value)} 
