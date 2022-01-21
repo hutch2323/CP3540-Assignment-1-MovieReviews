@@ -66,7 +66,7 @@ export function Movie({name, date, actors, poster, rating, onRemove = f => f}) {
                             <h7 class="card-title">
                                 {monthNames[releaseDate.getMonth()] + " " + releaseDate.getFullYear()}
                             </h7>
-                            <p class="p-4 card-text mb-0"><b>Actors: </b>
+                            <p id="actors" class="p-4 card-text mb-0"><b>Actors: </b>
                                 {actors.map( (actor, i) => {
                                     if (i + 1 == actors.length){
                                         return <>{actor}</>

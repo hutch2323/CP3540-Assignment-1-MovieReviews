@@ -56,14 +56,82 @@
   }
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   img.p-3{
     width:50%
   }
-}
+} */
 
 @media (max-width: 550px) {
   #logo {
     width:100%
+  }
+
+  /* img.p-3 {
+    width:80%;
+  } */
+}
+
+@media (min-width: 550px){
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333% !important;
+  }
+
+  .col-md-8 {
+    flex: 0 0 auto;
+    width: 66.66666667% !important;
+  }
+
+  .row>* {
+    flex-shrink: 0;
+    /* width: auto; */
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+  }
+}
+
+@media (max-width: 550px){
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 40% !important;
+  }
+
+  .col-md-8 {
+    flex: 0 0 auto;
+    width: 60% !important;
+  }
+
+  .card-body{
+    padding-left:0px !important;
+    padding-right:0px !important;
+  }
+
+  .row>* {
+    flex-shrink: 0;
+    /* width: auto; */
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+  }
+
+  #actors {
+    padding-left:0px !important;
+    padding-right:0px !important;
+  }
+}
+
+@media (max-width: 430px){
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 50% !important;
+  }
+
+  .col-md-8 {
+    flex: 0 0 auto;
+    width: 50% !important;
   }
 }

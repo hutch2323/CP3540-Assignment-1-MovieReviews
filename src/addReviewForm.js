@@ -27,7 +27,7 @@ export function AddReviewForm({ onNewReview = f => f }){
 
     return(
         <>
-            <form className="pt-3 container" onSubmit={submit} style={{textAlign:"left", maxWidth:"720px"}}>
+            <form className="pt-3 container border border-dark" onSubmit={submit} style={{textAlign:"left", maxWidth:"720px"}}>
                 <div className="mb-4">
                     <label className="form-label fw-bold" htmlFor="name">Movie Name:</label>
                     <input 
@@ -105,7 +105,7 @@ export function AddReviewForm({ onNewReview = f => f }){
                     />
                 </div>
 
-                <div style={{textAlign:"center"}}>
+                <div className="pb-3" style={{textAlign:"center"}}>
                     <button className="btn btn-primary" type="submit" value="Submit">Add Review</button>
                 </div>
             </form>
