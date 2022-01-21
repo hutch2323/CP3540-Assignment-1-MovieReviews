@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaTrash, FaStar } from "react-icons/fa"; 
 
 export function MovieList({ movies = [], onRemoveMovie = f => f }){
-    if (!movies.length) return <div>No Movie Reviews Available</div>;
+    if (!movies.length) return <div className="pt-3">No Movie Reviews Available</div>;
 
     return(
         <div className="mt-3" style={{display: "flex", flexWrap: "wrap", width: "100%", justifyContent: "center"}}>

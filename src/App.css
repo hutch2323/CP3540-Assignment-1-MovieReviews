@@ -134,4 +134,12 @@
     flex: 0 0 auto;
     width: 50% !important;
   }
+
+  #spacer{
+    display: none;
+  }
+
+  #ratingLabel, #ratingCol{
+    margin-top: 1.5rem;
+  }
 }
