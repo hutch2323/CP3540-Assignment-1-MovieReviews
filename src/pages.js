@@ -59,7 +59,9 @@ export function AddReview({movies, setMovies}){
     return(
         <>
             <NavigationBar />
-            <h2>Movie Review Form</h2>
+            <div className="mt-4 p-2 bg-dark text-white" style={{width:"100%", maxWidth:"720px", margin:"auto"}}>
+                <h2 style={{textAlign:"center"}}>Movie Review Form</h2>
+            </div>
             <AddReviewForm
                 onNewReview={(name, date, actors, poster, rating) => {
                     const newReviews = [
